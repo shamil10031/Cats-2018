@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CatsAndroid</string>
+    <string name="media_folder">/Cats</string>
+
+    <string name="camera_not_available_msg">Ой, камера недоступна на твоем устройстве :(</string>
+    <string name="photo_capture_failed_msg">Не удалось сфотографировать кота :(</string>
+
+    <string name="exit">Выход</string>
+    <string name="exit_confirmation_msg">Вы действительно хотите выйти?</string>
+</resources>

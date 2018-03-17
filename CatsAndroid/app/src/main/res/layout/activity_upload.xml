@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shomazzapp.catsandroid.UploadActivity">
+
+    <ImageView
+        android:id="@+id/cat_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/cat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_uploaded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="Очень милый котик, давай узнаем его породу!"
+        android:textColor="#ff0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/upload_image_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cat_image_view"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageButton
+        android:onClick="onGoClick"
+        android:id="@+id/upload_image_button"
+        android:layout_width="@dimen/big_circle_diametr"
+        android:layout_height="@dimen/big_circle_diametr"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/primary_color_circle"
+        android:padding="@dimen/big_circle_padding"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cat_image_view"
+        app:layout_constraintVertical_bias="0.7" />
+
+</android.support.constraint.ConstraintLayout>
